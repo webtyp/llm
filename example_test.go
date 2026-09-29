@@ -1,10 +1,10 @@
 package llm_test
 
 import (
-	"fmt"
 	"testing"
 
 	"webtyp.com/context"
+	"webtyp.com/fmt"
 	"webtyp.com/llm"
 )
 
