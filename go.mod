@@ -1,3 +1,3 @@
-module github.com/webtyp/llm
+module webtyp.com/llm
 
 go 1.26.8
