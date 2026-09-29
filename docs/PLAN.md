@@ -3,6 +3,8 @@ PLAN: "feat: llm contract — Client, Streamer, TokenCounter and the message/req
 TAG: v0.1.0
 EXECUTOR: jules
 REVIEWER: none
+STATUS: running
+SESSION: 7069310062132861641
 ---
 
 > This plan is dispatched via the CodeJob workflow. See skill: agents-workflow.
