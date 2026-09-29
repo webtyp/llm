@@ -1,12 +1,10 @@
 # llm
+<img src="docs/img/badges.svg">
 
 The contract between code that asks a language model something and the runtime that answers:
 `Client`, `Streamer`, `TokenCounter`, and the message, request and response types that cross between them.
 It is a contract only. There is no model in this repository, so importing it adds no model
 code to your binary.
-
-> **STATUS (remove this note when v0.1.0 is published):** the API below is specified in
-> `docs/PLAN.md` and not implemented yet.
 
 ## Getting started
 
