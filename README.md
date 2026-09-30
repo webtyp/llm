@@ -2,7 +2,7 @@
 <img src="docs/img/badges.svg">
 
 The contract between code that asks a language model something and the runtime that answers:
-`Client`, `Streamer`, `TokenCounter`, and the message, request and response types that cross between them.
+`Client`, `Streamer`, `TokenCounter`, `Decider`, and the message, request and response types that cross between them.
 It is a contract only. There is no model in this repository, so importing it adds no model
 code to your binary.
 
@@ -35,6 +35,7 @@ model that will read the prompt.
 | ask a model | `Client.Generate` |
 | count tokens for a budget | `TokenCounter.CountTokens` |
 | receive the answer while it is generated | `Streamer.GenerateStream` (version 2 voice loop) |
+| ask a closed question and get a probability per option | `Decider.Decide` (a critic, a router) |
 | offer tools | `Request.Tools` (`ToolDef`) |
 | know why the model stopped | `Response.StopReason` (`StopEndTurn`, `StopToolUse`, `StopMaxTokens`) |
 

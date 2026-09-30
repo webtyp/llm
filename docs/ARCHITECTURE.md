@@ -20,6 +20,7 @@ and a model runtime does not import the orchestrator.
 | `Client.Generate(ctx, Request) (Response, error)` | a model runtime | `agent` (reasoning, reflection, summarization) |
 | `TokenCounter.CountTokens(text) int` | the same runtime, with its own tokenizer | `agentcontext` (budgets), `agent` (per-message counts) |
 | `Streamer.GenerateStream(ctx, Request, onText) (Response, error)` | a runtime that can stream | the version-2 voice loop, to start speaking before the answer ends |
+| `Decider.Decide(ctx, Question) (Decision, error)` | a runtime that can read its own probabilities (in the browser, `qwen`; on the developer machine, `agenteval` over `llama-server`) | `agent`'s critic; later a tool router |
 
 They are separate interfaces (interface segregation). Code that only budgets a prompt asks for
 a `TokenCounter` and cannot call the model by accident, and a runtime that cannot stream does
