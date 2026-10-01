@@ -1,7 +1,7 @@
 # Small models for the in-browser agent — what we measured
 
 This page records which small language models were measured for webtyp's AI agent, how, and
-what the numbers say. The agent runs **in the user's browser**: its first application, Jose,
+what the numbers say. The agent runs **in the user's browser**: its first application, Cote,
 answers the staff of a clinic whose weakest PC has 4 GB of RAM. So every choice here trades
 quality against memory and speed on that machine.
 
@@ -91,7 +91,7 @@ the right days, nothing invented, the injected order not obeyed).
 - Licences: LFM2.5-350M uses the LFM Open License (free under USD 10 M revenue), granite and
   Qwen are Apache-2.0, and Gemma has use restrictions.
 
-## Model size inside the full agent (Jose's scenarios)
+## Model size inside the full agent (Cote's scenarios)
 
 `agent` v0.10.0, `agenteval` scenarios, a generative model doing everything:
 
@@ -145,7 +145,7 @@ behavior.
 ## Open questions
 
 - Routing descriptions: rewrite the two confusions above and measure again.
-- Decision quality in the full agent loop (Jose's scenarios driven by decider-0.8b), not only on
+- Decision quality in the full agent loop (Cote's scenarios driven by decider-0.8b), not only on
   isolated questions.
 - Speed of decider-0.8b in our runtime: one forward pass over the prompt, no generation, with the
   prefix cache holding the tool list.
