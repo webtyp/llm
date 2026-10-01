@@ -57,5 +57,5 @@ flowchart TD
 
 - [Small browser LLMs](SMALL_LLM_BROWSER_MODEL.md): candidate models under 1B parameters for
   tool calling in Spanish, and grammar-constrained decoding.
-- [Small models, measured](EFFICIENT_SLM.md): decision vs generative models for the in-browser agent (server-side
-  models, kept for reference).
+- [Small models, measured](EFFICIENT_SLM.md): decision vs generative models for the in-browser agent, with the
+  numbers behind the hybrid design.
