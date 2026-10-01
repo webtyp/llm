@@ -43,5 +43,5 @@ model that will read the prompt.
 
 - [Architecture](docs/ARCHITECTURE.md): what the contract is, who implements it, and where the model runs.
 - [Small browser LLMs](docs/SMALL_LLM_BROWSER_MODEL.md): candidate models under 1B parameters (research).
-- [Efficient SLMs](docs/EFFICIENT_SLM.md): background on small models and quantization (research).
+- [Small models, measured](docs/EFFICIENT_SLM.md): which small models decide and write well in Spanish for the in-browser agent, with the numbers.
 - [Agent guide](AGENTS.md): rules for anyone changing this library.
